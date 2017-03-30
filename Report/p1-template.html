@@ -1,0 +1,121 @@
+
+<html>
+<head>
+<title> CS440/640 Homework Template: HW[x] Student Name [xxx]  </title>
+<style>
+<!--
+body{
+font-family: 'Trebuchet MS', Verdana;
+}
+p{
+font-family: 'Trebuchet MS', Times;
+margin: 10px 10px 15px 20px;
+}
+h3{
+margin: 5px;
+}
+h2{
+margin: 10px;
+}
+h1{
+margin: 10px 0px 0px 20px;
+}
+div.main-body{
+align:center;
+margin: 30px;
+}
+hr{
+margin:20px 0px 20px 0px;
+}
+-->
+</style>
+</head>
+
+<body>
+<center>
+<a href="http://www.bu.edu"><img border="0" src="http://www.cs.bu.edu/fac/betke/images/bu-logo.gif"
+width="119" height="120"></a>
+</center>
+
+<h1>Assignment Title</h1>
+<p> 
+ CS 440 P 1 <br>
+ Name: Ekaterina Prokopeva <br>
+ Miguel Valdez  <br>
+    Date 02/24/2017
+</p>
+
+<div class="main-body">
+<hr>
+<h2> Logistic Regression </h2>
+<p>
+1. The decision boundary obtaied by running LogisticRegression.py on Linear Dataset:
+</p>
+<img src="./LRLinear.png" style="height: 300px">
+<p>
+The decision boundary obtaied by running LogisticRegression.py on NonLinear Dataset:
+</p>
+<img src="./LRNonLinear.png" style="height: 300px">
+<br>
+<p><strong>2. Can your logistic regression classifier learn non-linear decision boundaries?</strong>
+Logistic regression could work if we applied more non linear features to it such as polynomials. However, the data is not linearly separable so Logistic Regression won’t be able to fit the data using the method proposed in class.
+</p>
+
+<hr>
+
+<h2> Neural Networks </h2>
+<p>
+The decision boundary obtaied by running NeuralNet.py on Linear Dataset with 1 hidden layer:
+</p>
+<img src="./NNLinear1.png" style="height: 300px">
+<p>
+The decision boundary obtaied by running NeuralNet.py on NonLinear Dataset with 1 hidden layer:
+</p>
+<img src="./NNNonLinear1.png" style="height: 300px">
+<br>
+<p><strong>3. Can your neural network model (with one hidden layer) learn non-linear decision boundaries? Why or why not?
+</strong> No, since a neaural network with 1 hidden layer acts close to the logistic regression.</p>
+<br>
+<p><strong>4. What effect does learning rate have on how your neural network is trained?</strong>
+The Learning rate in a neural network is part of the the function that takes care of updating the weights during the propagations, this is essential for the algorithm since it is what defines the scale in which weights are modified, so you have to make sure the rate is not too small or too big since both can cause problems.
+</p>
+<img src="./lr1.png" style="height: 300px">
+<img src="./lr2.png" style="height: 300px">
+<img src="./lr3.png" style="height: 300px">
+
+<p><strong>5. What effect does the number of nodes in the hidden layer have on how your neural network is trained?</strong>
+If the data set is linearly separable then there is no need for hidden layers. If it is not the case then it’s important to eliminate unnecessary redundant nodes. The more hidden layers we have the more complex functions it is possible to fit. But more hidden layers requires more computation. So it is important to pick a small optimal number.
+</p>
+<p>Number of hidden layers: 3</p>
+<img src="./NNLinear3.png" style="height: 300px">
+<img src="./NNNonLinear3.png" style="height: 300px">
+<p>Number of hidden layers: 20</p>
+<img src="./NNLinear20.png" style="height: 300px">
+<img src="./NNNonLinear20.png" style="height: 300px">
+<p>Number of hidden layers: 100</p>
+<img src="./NNLinear100.png" style="height: 300px">
+
+<hr>
+
+<h2> Credits and Bibliography </h2>
+<p>
+
+Cite any papers or other references you consulted while developing
+your solution.  Citations to papers should include the authors, the
+year of publication, the title of the work, and the publication
+information (e.g., book name and publisher; conference proceedings and
+location; journal name, volume and pages; technical report and
+institution).  Material on the web should include the url and date of
+access.
+</p>
+
+<p>
+Credit any joint work or discussions with your classmates. 
+</p>
+<hr>
+</div>
+</body>
+
+
+
+</html>
